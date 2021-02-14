@@ -1,0 +1,22 @@
+.cardsWrapper {
+  width: 320px;
+  margin: 0 auto;
+}
+.list {
+  padding: 0;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+  column-gap: 40px;
+  row-gap: 40px;
+  justify-content: center;
+}
+@media (min-width: 1440px) {
+  .cardsWrapper {
+    width: 1440px;
+  }
+  .list {
+    padding-top: 104px;
+    grid-template-columns: repeat(3, min-content);
+  }
+}

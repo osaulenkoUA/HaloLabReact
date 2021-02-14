@@ -1,0 +1,19 @@
+@font-face {
+  font-family: 'roboto';
+  font-style: normal;
+  src: url('./roboto-v20-latin-regular.ttf');
+}
+
+.container {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0 auto;
+  font-family: 'roboto';
+  background-color: #e5e5e5;
+}
+
+@media (min-width: 1440px) {
+  .container {
+    width: 100vw;
+  }
+}
