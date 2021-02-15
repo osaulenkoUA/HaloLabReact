@@ -8,8 +8,16 @@ const addProduct = (_, { payload }) => payload;
 const getProduct = (_, { payload }) => payload;
 
 const product = createReducer(initialState, {
-  [productsActions.addProductsSuccess]: addProduct,
-  [productsActions.getProductsSuccess]: getProduct,
+	[productsActions.addProductsSuccess]: addProduct,
+	[productsActions.getProductsSuccess]: getProduct,
 });
 
-export default combineReducers({ product });
+const isShowModal = createReducer(false, {
+	[productsActions.showModal]: (_, { payload }) => payload,
+});
+
+const currentOrderId = createReducer(null, {
+	[productsActions.orderedItem]: (_, { payload }) => payload,
+});
+
+export default combineReducers({ product, isShowModal, currentOrderId });

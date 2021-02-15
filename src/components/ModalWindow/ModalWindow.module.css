@@ -3,9 +3,11 @@
 }
 .gallary__modal {
 	position: fixed;
-	width: 1280px;
+	top: 0;
+	left: 0;
+	width: 100vw;
 	height: 100vh;
-	background-color: rgba(75, 75, 72, 0.795);
+	background-color: rgba(0, 0, 0, 0.8);
 }
 .wrap__img {
 	position: absolute;
