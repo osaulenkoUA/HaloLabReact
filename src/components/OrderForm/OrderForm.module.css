@@ -1,131 +1,143 @@
 .orderWrapper {
-	position: absolute;
-	width: 300px;
-	height: 418px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #ffffff;
-	border-radius: 24px;
+  position: absolute;
+  width: 300px;
+  height: 418px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ffffff;
+  border-radius: 24px;
 }
 .iconClose {
-	position: absolute;
-	cursor: pointer;
-	top: -2%;
-	left: 93%;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: #f2f2f2;
+  position: absolute;
+  cursor: pointer;
+  top: -2%;
+  left: 93%;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f2f2f2;
 }
 .iconClose:hover {
-	background-color: #e5ebeb;
+  background-color: #e5ebeb;
 }
 
 .iconClose:active {
-	background-color: #4bcfa0;
+  background-color: #4bcfa0;
 }
 
 .wrapNameCategory {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 54px;
-	margin-bottom: 16px;
-	text-align: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 54px;
+  margin-bottom: 16px;
+  text-align: center;
 }
 .itemCard__name {
-	margin: 0;
-	font-size: 40px;
-	line-height: 48px;
+  margin: 0;
+  font-size: 40px;
+  line-height: 48px;
 }
 .itemCard__category {
-	margin: 0;
-	margin-bottom: 8px;
-	font-size: 16px;
-	text-transform: uppercase;
-	line-height: 24px;
-	opacity: 0.5;
+  margin: 0;
+  margin-bottom: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 24px;
+  opacity: 0.5;
 }
 
 .wrapPrice {
-	display: grid;
-	grid-template-columns: min-content min-content;
-	column-gap: 4px;
-	justify-content: center;
+  display: grid;
+  grid-template-columns: min-content min-content;
+  column-gap: 4px;
+  justify-content: center;
 }
 .price {
-	font-size: 60px;
-	line-height: 1.2;
+  font-size: 60px;
+  line-height: 1.2;
 }
 .iconCurrency {
-	font-size: 30px;
-	line-height: 2;
+  font-size: 30px;
+  line-height: 2;
 }
 .form {
-	margin-top: 10px;
-	display: grid;
-	grid-template-columns: 1fr;
-	justify-items: center;
-	row-gap: 16px;
+  position: relative;
+  margin-top: 10px;
+  display: grid;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  row-gap: 16px;
 }
 
 .form__input {
-	box-sizing: border-box;
-	border-radius: 16px;
-	width: 224px;
-	height: 44px;
-	border: 1px solid rgba(0, 0, 0, 0.2);
-	padding: 16px;
+  box-sizing: border-box;
+  border-radius: 16px;
+  width: 224px;
+  height: 44px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 16px;
 }
 
 .form__input:focus {
-	outline: none;
-	border: 1px solid #2ac790;
+  outline: none;
+  border: 1px solid #2ac790;
 }
 .form__input::placeholder {
-	font-size: 16px;
-	line-height: 1.5;
-	color: rgba(0, 0, 0, 0.5);
+  font-size: 16px;
+  line-height: 1.5;
+  color: rgba(0, 0, 0, 0.5);
 }
 .form__btn {
-	cursor: pointer;
-	border: none;
-	border-radius: 16px;
-	width: 224px;
-	height: 44px;
-	background-color: #50daa8;
-	color: #fff;
-	font-size: 16px;
-	line-height: 1.5;
-	font-weight: 500;
+  cursor: pointer;
+  border: none;
+  border-radius: 16px;
+  width: 224px;
+  height: 44px;
+  background-color: #50daa8;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.5;
+  font-weight: 500;
 }
 .form__btn:focus {
-	outline: none;
+  outline: none;
 }
 
 .form__btn:hover {
-	background-color: #2ac790;
+  background-color: #2ac790;
+}
+.errorInput,
+.errorInputNumb {
+  position: absolute;
+  color: #e43f3f;
+  font-size: 12px;
+  top: 43px;
+  left: 40px;
+}
+.errorInputNumb {
+  top: 102px;
 }
 
 @media (min-width: 1440px) {
-	.orderWrapper {
-		width: 384px;
-		height: 536px;
-	}
-	.wrapNameCategory {
-		width: 90%;
-		margin-bottom: 10px;
-	}
-	.form {
-		margin-top: 40px;
-	}
-	.form__input {
-		width: 288px;
-		height: 56px;
-	}
-	.form__btn {
-		margin-top: 16px;
-		width: 288px;
-		height: 56px;
-	}
+  .orderWrapper {
+    width: 384px;
+    height: 536px;
+  }
+  .wrapNameCategory {
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .form {
+    margin-top: 40px;
+  }
+  .form__input {
+    width: 288px;
+    height: 56px;
+  }
+  .form__btn {
+    margin-top: 16px;
+    width: 288px;
+    height: 56px;
+  }
 }
