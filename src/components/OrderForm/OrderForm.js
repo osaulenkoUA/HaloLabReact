@@ -26,9 +26,9 @@ const OrderForm = () => {
 
 	const onHandleBlurName = (e) => {
 		console.dir(e.target);
-		if (e.target.name === 'name') console.log('name');
+		// if (e.target.name === 'name') console.log('name');
 		const isLetter = /^(?:[A-Za-z]+)$/.test(name);
-		// console.log(isLetter);
+		console.log(isLetter);
 	};
 
 	const onHandleSubmit = (e) => {
