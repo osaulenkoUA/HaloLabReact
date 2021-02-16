@@ -7,6 +7,7 @@ const addProductsError = createAction('products/addProductsError');
 const getProductsRequest = createAction('products/getProductsRequest');
 const getProductsSuccess = createAction('products/getProductsSuccess');
 const getProductsError = createAction('products/getProductsError');
+
 const showModal = createAction('products/showModal');
 const orderedItem = createAction('products/orderedItem');
 

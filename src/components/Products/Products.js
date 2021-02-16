@@ -1,14 +1,15 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import Card from '../Card/Card.js';
-import productsActions from '../../redux/products/productsActions.js';
 
+import productsActions from '../../redux/products/productsActions.js';
+import { getProducts } from '../../redux/products/productsSelectors.js';
+
+import Card from '../Card/Card.js';
 import s from './Products.module.css';
 
-const ProductItem = () => {
+const ProductItems = () => {
 	const dispatch = useDispatch();
-
-	const products = useSelector((state) => state.product);
+	const products = useSelector(getProducts);
 
 	const onHandleClick = () => {
 		dispatch(productsActions.showModal(true));
@@ -17,6 +18,7 @@ const ProductItem = () => {
 		const idCheapestItem = newProducts[0]._id;
 		dispatch(productsActions.orderedItem(idCheapestItem));
 	};
+
 	return (
 		<div className={s.cardsWrapper}>
 			<ul className={s.list}>
@@ -33,4 +35,4 @@ const ProductItem = () => {
 	);
 };
 
-export default ProductItem;
+export default ProductItems;

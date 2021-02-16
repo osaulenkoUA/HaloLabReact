@@ -1,12 +1,12 @@
 import React from 'react';
-import OrderForm from '../OrderForm/OrderForm.js';
+import OrderCard from '../OrderCard/OrderCard.js';
 
 import s from './ModalWindow.module.css';
 
 const ModalWindow = () => {
 	return (
 		<div className={s.gallary__modal}>
-			<OrderForm />
+			<OrderCard />
 		</div>
 	);
 };

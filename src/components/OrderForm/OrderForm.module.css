@@ -1,67 +1,5 @@
-.orderWrapper {
-	position: absolute;
-	width: 300px;
-	height: 418px;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	background-color: #ffffff;
-	border-radius: 24px;
-}
-.iconClose {
-	position: absolute;
-	cursor: pointer;
-	top: -2%;
-	left: 93%;
-	width: 40px;
-	height: 40px;
-	border-radius: 50%;
-	background-color: #f2f2f2;
-}
-.iconClose:hover {
-	background-color: #e5ebeb;
-}
-
-.iconClose:active {
-	background-color: #4bcfa0;
-}
-
-.wrapNameCategory {
-	width: 90%;
-	margin: 0 auto;
-	margin-top: 54px;
-	margin-bottom: 16px;
-	text-align: center;
-}
-.itemCard__name {
-	margin: 0;
-	font-size: 40px;
-	line-height: 48px;
-}
-.itemCard__category {
-	margin: 0;
-	margin-bottom: 8px;
-	font-size: 16px;
-	text-transform: uppercase;
-	line-height: 24px;
-	opacity: 0.5;
-}
-
-.wrapPrice {
-	display: grid;
-	grid-template-columns: min-content min-content;
-	column-gap: 4px;
-	justify-content: center;
-}
-.price {
-	font-size: 60px;
-	line-height: 1.2;
-}
-.iconCurrency {
-	font-size: 30px;
-	line-height: 2;
-}
 .form {
+	position: relative;
 	margin-top: 10px;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -87,6 +25,21 @@
 	line-height: 1.5;
 	color: rgba(0, 0, 0, 0.5);
 }
+.form__inputInValid {
+	box-sizing: border-box;
+	border-radius: 16px;
+	width: 224px;
+	height: 44px;
+	border: 1px solid rgba(255, 0, 0, 1);
+	padding: 16px;
+}
+
+.form__inputInValid::placeholder {
+	font-size: 16px;
+	line-height: 1.5;
+	color: rgba(0, 0, 0, 0.5);
+}
+
 .form__btn {
 	cursor: pointer;
 	border: none;
@@ -104,18 +57,21 @@
 }
 
 .form__btn:hover {
-	background-color: #2ac790;
+	background-color: #3d9274;
+}
+.errorInput,
+.errorInputNumb {
+	position: absolute;
+	color: #e43f3f;
+	font-size: 12px;
+	top: 45px;
+	left: 40px;
+}
+.errorInputNumb {
+	top: 104px;
 }
 
 @media (min-width: 1440px) {
-	.orderWrapper {
-		width: 384px;
-		height: 536px;
-	}
-	.wrapNameCategory {
-		width: 90%;
-		margin-bottom: 10px;
-	}
 	.form {
 		margin-top: 40px;
 	}
@@ -125,6 +81,18 @@
 	}
 	.form__btn {
 		margin-top: 16px;
+		width: 288px;
+		height: 56px;
+	}
+	.errorInput {
+		top: 58px;
+		left: 46px;
+	}
+	.errorInputNumb {
+		top: 130px;
+		left: 46px;
+	}
+	.form__inputInValid {
 		width: 288px;
 		height: 56px;
 	}

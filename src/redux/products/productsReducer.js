@@ -20,4 +20,10 @@ const currentOrderId = createReducer(null, {
 	[productsActions.orderedItem]: (_, { payload }) => payload,
 });
 
-export default combineReducers({ product, isShowModal, currentOrderId });
+const loading = createReducer(false, {
+	[productsActions.getProductsRequest]: () => true,
+	[productsActions.getProductsSuccess]: () => false,
+	[productsActions.getProductsError]: () => false,
+});
+
+export default combineReducers({ product, isShowModal, currentOrderId, loading });

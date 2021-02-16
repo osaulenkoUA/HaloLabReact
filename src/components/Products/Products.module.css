@@ -5,6 +5,7 @@
 }
 .list {
 	padding: 0;
+	padding-top: 40px;
 	list-style: none;
 	display: grid;
 	grid-template-columns: 1fr;
@@ -25,6 +26,7 @@
 	border-radius: 16px;
 	color: #ffffff;
 	font-size: 24px;
+	margin-bottom: 40px;
 }
 
 .wrapperBtn__btn:focus {
@@ -32,8 +34,9 @@
 }
 
 .wrapperBtn__btn:hover {
-	background-color: #2ac790;
+	background-color: #3d9274;
 }
+
 @media (min-width: 1440px) {
 	.cardsWrapper {
 		width: 1440px;

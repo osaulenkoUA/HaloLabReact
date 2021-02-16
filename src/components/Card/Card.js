@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import productsActions from '../../redux/products/productsActions.js';
 
-import s from './Card.module.css';
+import productsActions from '../../redux/products/productsActions.js';
+import { getProductItem } from '../../redux/products/productsSelectors.js';
+
 import IconShopBag from '../assets/IconShopBag/IconShopBag.js';
+import s from './Card.module.css';
 
 const Card = ({ id }) => {
 	const dispatch = useDispatch();
-	const products = useSelector((state) => state.product);
-	const item = products.find((el) => el._id === id);
-
+	const item = useSelector((state) => getProductItem(state, id));
 	const [focus, setFocus] = useState(false);
+
 	const onFocus = () => setFocus(true);
 	const onFocusLost = () => setFocus(false);
 
